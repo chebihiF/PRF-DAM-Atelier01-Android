@@ -28,23 +28,30 @@
         android:gravity="center"
         android:hint="Enter password" />
 
-    <Button
-        android:layout_marginLeft="10dp"
-        android:layout_alignLeft="@id/password_txt"
+    <LinearLayout
         android:layout_below="@id/password_txt"
-        android:id="@+id/btn_logIN"
-        android:text="Login"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_marginRight="10dp"
-        android:layout_alignRight="@id/password_txt"
-        android:layout_below="@id/password_txt"
-        android:id="@+id/btn_cancel"
-        android:text="Cancel"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginRight="30dp"
+            android:id="@+id/btn_logIN"
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>
